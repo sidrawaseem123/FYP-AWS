@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Production Module</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        height: 100vh;
+      }
+
+      .left-div,
+      .right-div {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .left-div img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .right-div {
+        background-color: f0f0f0;
+        flex-direction: column;
+      }
+
+      .form-container {
+        text-align: center;
+        padding: 20px;
+      }
+
+      .form-container h1 {
+        font-size: 36px;
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      .form-container h2 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      .button-container {
+        margin-top: 20px;
+        display: flex;
+      }
+
+      .circle-container {
+        text-align: center;
+        margin: 0 10px;
+        transition: transform 0.3s; /* Added transition effect */
+      }
+
+      .circle-container img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        padding-inline: 40px;
+      }
+
+      .circle-container span {
+        display: block;
+      }
+
+      /* Hover effect for the circles */
+      .circle-container:hover {
+        transform: scale(1.1); /* Adjust the scale factor as needed */
+      }
+
+      .underline {
+        height: 1px;
+        background-color: #ccc;
+        margin: 20px 0;
+      }
+
+      button[type="submit"],
+      button[type="button"] {
+        width: 150px;
+        padding: 10px 20px;
+        background-color: #0e0531;
+        color: #fff;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+      }
+
+      button[type="submit"]:hover,
+      button[type="button"]:hover {
+        background-color: #2980b9;
+      }
+
+      form {
+        margin-top: 20px;
+      }
+
+      .input-container {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+      }
+
+      .input-field {
+        border: none;
+        outline: none;
+        width: 100%;
+        padding: 8px; /* Adjust padding as needed */
+        font-size: 16px; /* Adjust font size as needed */
+      }
+
+      .login-register-btns {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-left: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="left-div">
+      <img src="background.jpg" alt="Your Image" />
+    </div>
+
+    <div class="right-div">
+      <div class="form-container">
+        <h1>WELCOME TO</h1>
+        <h2>PRODUCTION MODULE</h2>
+        <br />
+        <div class="button-container">
+          <div class="circle-container">
+            <img class="icon" src="operator.png" alt="Operator Icon" />
+            <span>Operator</span>
+          </div>
+          <div class="circle-container">
+            <img class="icon" src="admin.png" alt="Admin Icon" />
+            <span>Admin</span>
+          </div>
+        </div>
+
+        <div class="underline"></div>
+        <br />
+
+        <form>
+          <div class="input-container">
+            <input type="text" placeholder="User ID" class="input-field" />
+          </div>
+
+          <div class="input-container">
+            <input type="password" placeholder="Password" class="input-field" />
+          </div>
+          </form>
+          <form action="dashboard.php">
+            <div class="login-register-btns">
+              <button type="submit">Login</button>
+
+          </form>
+          
+            
+          </div>
+      
+      </div>
+    </div>
+  </body>
+</html>
