@@ -1,9 +1,9 @@
 <?php
 error_reporting(E_ALL);
-$servername = "localhost";
-$username = "admin";
+$servername = "product-module.cdmkgi6iiona.eu-west-2.rds.amazonaws.com";
+$username = "root";
 $password = "12345678";
-$dbname = "product_module";
+$dbname = "production_module";
 
 $conn = mysqli_connect($servername,$username,$password,$dbname);
 if($conn)
