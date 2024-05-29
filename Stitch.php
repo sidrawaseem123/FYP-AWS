@@ -105,7 +105,7 @@
 
         if ($result) {
             echo "<script>alert('Data inserted successfully.')</script>";
-            header("Location: orderplan.php");
+            header("Location: OrderPlan.php");
         } else {
             echo "<script>alert('Error: " . mysqli_error($conn) . "')</script>";
         }

@@ -114,7 +114,7 @@ if (isset($_POST['submit'])) {
 
     if ($data) {
         echo "Inserted successfully";
-        header("Location: orderplan.php");
+        header("Location: OrderPlan.php");
     } else {
         echo "Failed: " . mysqli_error($conn);
     }
