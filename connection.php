@@ -1,9 +1,9 @@
 <?php
 error_reporting(E_ALL);
 $servername = "localhost";
-$username = "root";
-$password = " ";
-$dbname = "production_module";
+$username = "admin";
+$password = "12345678";
+$dbname = "product_module";
 
 $conn = mysqli_connect($servername,$username,$password,$dbname);
 if($conn)
