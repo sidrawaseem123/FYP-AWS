@@ -87,7 +87,6 @@
     // Retrieve data from the database
     $query = "SELECT * FROM purchordertable INNER JOIN iteminfo ON purchordertable.PurcOrder=iteminfo.PurcOrder";
     $result = mysqli_query($conn, $query);
-
     echo "<h2>PURCHASE ORDER DATA</h2>";
     echo "<div style='overflow-x:auto;'>
             <table>
@@ -101,14 +100,13 @@
                     <th>Item Code</th>
                     <th>Packing Type</th>
                     <th>Item Description</th>
-                    <th>Total Quantity</th>
+                   
                     <th>Item ID</th>
                     <th>Color</th>
                     <th>Size</th>
                     <th>Order Quantity</th>
                     <th class='actions'>Actions</th>
                 </tr>";
-
     while ($row = mysqli_fetch_assoc($result)) {
         echo "<tr>
                 <td>{$row['ProdOrder']}</td>
@@ -120,7 +118,7 @@
                 <td>{$row['ItemCode']}</td>
                 <td>{$row['PackingType']}</td>
                 <td>{$row['Description']}</td>
-                <td>{$row['Quantity']}</td>
+              
                 <td>{$row['id']}</td>
                 <td>{$row['Color']}</td>
                 <td>{$row['Size']}</td>
