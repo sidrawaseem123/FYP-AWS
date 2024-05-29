@@ -1,7 +1,7 @@
 <?php
 error_reporting(E_ALL);
 $servername = "product-module.cdmkgi6iiona.eu-west-2.rds.amazonaws.com";
-$username = "root";
+$username = "admin";
 $password = "12345678";
 $dbname = "production_module";
 
